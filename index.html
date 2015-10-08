@@ -1,0 +1,260 @@
+<html>
+<head>
+	<title>Curso Responsive Design</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header id="Home">
+		<div>
+			<span class="icon-mobile" title="mobile"></span>
+			<span class="icon-tablet" title="tablet"></span>
+			<span class="icon-desktop" title="desktop"></span>
+			<span class="icon-tv" title="TV"></span>
+			<span class="icon-printer" title="impressora"></span>
+		</div>
+		<h1>design<span>Responsivo</span></h1>
+		<h2>Por: Raphael do Carmo</h2>
+	</header>
+	<nav>
+		<span class="menu-mobile">Menu</span>
+		<ul>
+			<li>
+				<a href="#Home" id="menuHome">Início</a>
+			</li>
+			<li>
+				<a href="#QuemSou" id="menuQuemSou">WTF I am?</a>
+			</li>
+			<li>
+				<a href="#DesignResponsivo" id="menuDesignResponsivo">O que é Design Responsivo</a>
+			</li>
+			<li>
+				<a href="#MediaQueries" id="menuMediaQueries">Media Queries</a>
+			</li>
+			<li>
+				<a href="#OndeSaberMais" id="menuSaibaMais">Estude +</a>
+			</li>
+			<li>
+				<a href="#Duvidas" id="menuDuvidas">Dúvidas?</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section>
+		<article id="QuemSou">
+			<h2>#WTF I am?</h2>
+
+			<div class="avatar">
+			</div>
+
+			<p>
+				Publicitário, especialista em marketing digital, praticante de Kung Fu Shaolin do Norte e Tai Chi Chuan com o mestre <span>Dirceu Coelho</span>, jogador amador de vôlei no grupo <span>Perebas Voleiball Club</span> e tênis. Designer de Interfaces na DígithoBrasil Soluções em Software há cerca de 5 anos. Atuando na área de design de interfaces de sistemas e entusiasta de UX Centered Design, com participação em vários eventos nacionais como: Edted, Agile Brazil, Agile Trends, TDC (The Developers Conference), entre outros.
+			</p>
+
+			<p>
+				Participou de cursos, workshops e treinamentos na área de usabilidade e front-end development em instituições como ESPM, CAELUM, Crescimentum...
+			</p>
+
+			<p>
+				Designer de jogos eletrônicos na Diversul, passou por indústrias como a SEMALO e também em agências de comunicação.
+			</p>
+		</article>
+		
+		<article id="DesignResponsivo">
+			<h2>O que é Responsive Design</h2>
+
+			<figure>
+				<img src="imagens/responsive-design.png">
+			</figure>
+
+			<p>
+				Com o crescimento da variedade de dispositivos onde os websites são visualizados (laptops, tablets, netbooks, celulares, desktops com tela pequena, iMacs com telas gigantescas, segundo monitor etc.), seria enlouquecedor desenhar múltiplas versões de um mesmo site que suprissem cada uma dessas variações de tamanho de tela e cada uma das resoluções de tela disponíveis no mercado.
+			</p>
+
+			<p>
+				O Responsive Web Design é uma das soluções técnicas para esse problema: programar um site de forma que os elementos que o compõem se adaptem automaticamente à largura de tela do dispositivo no qual ele está sendo visualizado.
+			</p>
+
+			<p>
+				Um design responsivo inclui:
+			</p>
+
+			<ul>
+				<li>
+					Adaptar o layout da página de acordo com a resolução em que está sendo visualizada.
+				</li>
+				<li>
+					Redimensionar as imagens automaticamente para que caibam na tela e para que não sobrecarreguem a transferência de dados em um celular, por exemplo.
+				</li>
+				<li>
+					Simplificar elementos da tela para dispositivos móveis, onde o usuário normalmente tem menos tempo e menos atenção durante a navegação.
+				</li>
+				<li>
+					Ocultar elementos desnecessários nos dispositivos menores.
+				</li>
+				<li>
+					Adaptar tamanho de botões e links para interfaces touch onde o ponteiro do mouse é substituído pelo dedo do usuário.
+				</li>
+				<li>
+					Utilizar de forma inteligente recursos mobile como geolocalização e mudança na orientação do aparelho (horizontal ou vertical).
+				</li>
+			</ul>
+
+			<h3>Exemplos:</h3>
+
+			<div class="boxes">Box 1</div>
+			<div class="boxes">Box 2</div>
+			<div class="boxes">Box 3</div>
+			<div class="boxes">Box 4</div>
+			<div class="boxes">Box 5</div>
+			<div class="boxes">Box 6</div>
+			<div class="boxes">Box 7</div>
+			<div class="boxes">Box 8</div>
+
+			<p>
+				<small>Fonte: http://arquiteturadeinformacao.com/mobile/o-que-e-responsive-web-design/</small>
+			</p>
+		</article>
+
+		<article id="MediaQueries">
+			<h2>Media Queries</h2>
+			<p>
+				O HTML foi criado para ser portável, ou seja, ele deve ser lido e interpretado por qualquer tipo de dispositivo. Cada dispositivo exibe HTML de uma determinada maneira. Logo, a forma com que você formata o layout precisa ser diferente para cada dispositivo. Por exemplo, se você visita um site por um desktop, a experiência será totalmente diferente caso você visite o mesmo site por um dispositivo móvel. São dispositivos diferentes, com formas totalmente diferentes de navegação e uso.
+			</p>
+			
+			<p>
+				Essa diferença entre dispositivos é controlada pelas %%media types%%. Veja uma lista do que pode ser controlado abaixo:
+			</p>
+
+			<ul>
+				<li>
+					<h3>all</h3> 
+					este valor é usado para que o código CSS seja aplicado para todos os dispositivos.
+				</li>
+
+				<li>
+					<h3>braille</h3> 
+					para dispositivos táteis.
+				</li>
+				
+				<li>
+					<h3>embossed</h3>
+					para dispositivos que imprimem em Braille.
+				</li>
+				
+				<li>
+					<h3>handheld</h3>
+					para dispositivos de mão, celulares e outros dispositivos deste perfil. Normalmente com telas pequenas e banda limitada.
+				</li>
+				
+				<li>
+					<h3>print</h3>
+					para impressão em papel.
+				</li>
+				
+				<li>
+					<h3>projection</h3>
+					para apresentações, como PowerPoint. Este valor foi inventado pelo pessoal da Opera. MUITO útil.
+				</li>
+
+				<li>
+					<h3>screen</h3>
+					para dispositivos com telas coloridas e alta resolução.
+				</li>
+
+				<li>
+					<h3>speech</h3>
+					para sintetizadores de voz. O CSS 2 tem uma especificação de CSS chamada <a href="http://www.w3.org/TR/CSS2/aural.html">Aural</a> que podemos “formatar” a voz de leitores de tela e outros sintetizadores.
+				</li>
+
+				<li>
+					<h3>tty</h3>
+					para dispositivos que utilizam uma grade fixa para exibição de caracteres, como teletypes, terminais, dispositivos portáteis com display limitado.
+				</li>
+
+				<li>
+					<h3>tv</h3>
+					para dispositivos como televisores, ou seja, com baixa resolução, com boa quantidade de cores e scroll limitado.
+				</li>
+			</ul>
+
+			<p>
+				A aplicação é muito simples: basta adicionar a linha comum de %%link%% para seu CSS, inserindo um atributo %%media%% e adicionando o valor desejado:
+			</p>
+
+			<pre>&lt;link rel="stylesheet" href="estilo.css" type="text/css" media="handheld"&gt;</pre>
+		</article>
+
+		<article id="OndeSaberMais">
+			<h2>Estude mais, pratique mais e seja feliz!</h2>
+
+			<p>Não há fórmula mágica para se aprender a fazer se não for praticando. Veja onde saber mais sobre Responsive design:</p>
+
+			<ul>
+				<li>
+					<a href="http://www.w3.org/">W3C</a> - Inglês - Principal consórcio responsável pela evolução e aplicação da web.
+				</li>
+				
+				<li>
+					<a href="http://tableless.com.br/">Tableless</a> - Português - Artigos e tutoriais para praticar.
+				</li>
+				
+				<li>
+					<a href="http://www.w3schools.com/">W3Schools</a> - Inglês - Referência e exemplos de uso não só de media queries mas também de muitas outras linguagens web.
+				</li>
+				
+				<li>
+					<a href="http://arquiteturadeinformacao.com/">Arquitetura da informação</a> - Português - Blog com foco em interação humano-computador.
+				</li>
+
+				<li>
+					<a href="http://google.com">Google</a> - Pesquise, pratique e divirta-se! Só depende de você!
+				</li>
+
+			</ul>
+
+		</article>
+
+		<article id="Duvidas">
+			<h2>Ficou com dúvidas?</h2>
+
+			<p>
+				Envie-me uma mensagem: <a href="mailto:raphaeldocarmo@outlook.com">raphaeldocarmo@outlook.com</a>.
+			</p>
+			
+			<p>
+				Ou fale comigo pelas redes sociais:
+			</p>
+
+			<ul>
+				<li>
+					<a href="http://twitter.com/raphaeldocarmo" class="twitter"><span class="icon-twitter"></span> Twitter</a>
+					<small>@raphaeldocarmo</small>
+				</li>
+
+				<li>
+					<a href="http://facebook.com/raphadocarmo" class="facebook"><span class="icon-facebook"></span> Facebook</a>
+					<small>@raphadocarmo</small>
+				</li>
+
+				<li>
+					<a href="http://github.com/raphaeldocarmo" class="github"><span class="icon-github"></span> GitHub</a>
+					<small>@raphaeldocarmo</small>
+				</li>
+			</ul>
+
+		</article>
+
+	</section>
+
+	<footer>
+		<h3>DígithoBrasil - Soluções em Software Ltda.</h3>
+		<a href="http://digithobrasil.com.br">www.digithobrasil.com.br</a>
+	</footer>
+	<script type="text/javascript">
+	</script>
+	<script type="text/javascript" src="js/comum.js"></script>
+</body>
+</html>

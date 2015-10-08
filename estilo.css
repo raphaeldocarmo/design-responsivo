@@ -1,0 +1,326 @@
+@import url(fontes/fonte.css);
+@import url(icones/style.css);
+.transition, *, nav ul li a, ul {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+.redondo, section article#QuemSou div.avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+
+.box-sizing, header, header h1, header h1 span, header h2, nav, nav ul, nav ul li, nav ul li a, section article#DesignResponsivo div.boxes, section article#MediaQueries, section article#OndeSaberMais, section article#Duvidas, span.menu-mobile {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #a03b3b;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 2em; }
+  header h1 {
+    font-weight: lighter;
+    font-size: 4em;
+    margin: 0;
+    padding: 0 0 1em;
+    line-height: 0.9em; }
+    header h1 span {
+      color: #ffffd7;
+      font-size: 2em;
+      display: block; }
+  header h2 {
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.5); }
+  header div {
+    margin: 0;
+    padding: 0 0 2em 0; }
+    header div span {
+      font-size: 3em;
+      color: rgba(0, 0, 0, 0.3);
+      margin: 0.2em;
+      padding: 0; }
+
+nav {
+  background-color: #731c1c;
+  margin: 0;
+  padding: 0; }
+  nav ul {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      display: inline; }
+      nav ul li a {
+        display: inline-block;
+        margin: 0;
+        padding: 2em 1em;
+        font-weight: normal;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: #fff; }
+        nav ul li a:hover, nav ul li a.ativo {
+          background-color: #540404; }
+  nav.fixa {
+    position: fixed;
+    width: 100%;
+    top: 0; }
+
+section article {
+  margin: 0;
+  padding: 3em 1em 1em;
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 1.5em; }
+  section article h2 {
+    font-weight: lighter;
+    font-size: 2.5em; }
+  section article img {
+    width: 50%;
+    min-width: 300px; }
+  section article ul {
+    display: table;
+    margin: 1em auto;
+    padding: 0;
+    text-align: left;
+    width: 75%;
+    min-width: 300px; }
+  section article#QuemSou {
+    background-color: #A0693B;
+    color: #fff; }
+    section article#QuemSou div.avatar {
+      margin: 1em auto;
+      padding: 0;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      background-image: url(imagens/raphael.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      border-width: 5px;
+      border-style: solid;
+      border-color: white; }
+  section article#DesignResponsivo div.boxes {
+    width: 22%;
+    height: 100px;
+    min-width: 100px;
+    margin: 1%;
+    padding: 1em;
+    display: inline-block; }
+    section article#DesignResponsivo div.boxes:nth-child(2n+2) {
+      background-color: #a03b3b;
+      color: #fff; }
+    section article#DesignResponsivo div.boxes:nth-child(2n+1) {
+      background-color: #236060;
+      color: #fff; }
+  section article#MediaQueries {
+    background-color: #2F802F;
+    color: #fff; }
+    section article#MediaQueries ul li {
+      background-color: #166516;
+      list-style-type: none;
+      margin: 1%;
+      padding: 0.5em;
+      text-align: center;
+      width: 45%;
+      min-width: 250px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      min-height: 130px;
+      vertical-align: top; }
+      section article#MediaQueries ul li h3 {
+        text-align: left;
+        border-width: 0 0 1px;
+        border-style: dashed;
+        border-color: white;
+        font-weight: lighter;
+        font-size: 2em;
+        color: #80C180;
+        margin: 0;
+        padding: 0.5em; }
+      section article#MediaQueries ul li a {
+        color: rgba(255, 255, 255, 0.6); }
+        section article#MediaQueries ul li a:hover {
+          color: white; }
+    section article#MediaQueries pre {
+      background-color: white;
+      color: #333;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: block;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px; }
+  section article#OndeSaberMais {
+    background-color: #236060;
+    color: #fff; }
+    section article#OndeSaberMais ul li {
+      background-color: #114C4C;
+      list-style-type: none;
+      margin: 1%;
+      padding: 0.5em;
+      text-align: center;
+      width: 45%;
+      min-width: 250px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      min-height: 130px;
+      vertical-align: top; }
+      section article#OndeSaberMais ul li a {
+        display: block;
+        text-align: left;
+        border-width: 0 0 1px;
+        border-style: dashed;
+        border-color: white;
+        font-weight: lighter;
+        text-decoration: none;
+        font-size: 1.5em;
+        line-height: 1em;
+        color: #80C180;
+        margin: 0;
+        padding: 0.5em;
+        color: rgba(255, 255, 255, 0.6); }
+        section article#OndeSaberMais ul li a:hover {
+          color: white; }
+  section article#Duvidas {
+    background-color: #777;
+    color: #fff; }
+    section article#Duvidas ul {
+      display: table;
+      margin: 1em auto;
+      padding: 0;
+      width: auto; }
+      section article#Duvidas ul li {
+        list-style-type: none;
+        margin: 1em;
+        padding: 0;
+        display: inline-block; }
+        section article#Duvidas ul li a {
+          display: inline-block;
+          margin: 0.2em;
+          padding: 0.5em;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+          text-decoration: none;
+          min-width: 125px;
+          text-align: center; }
+          section article#Duvidas ul li a.facebook {
+            background-color: #3b5998; }
+          section article#Duvidas ul li a.twitter {
+            background-color: #00aced; }
+          section article#Duvidas ul li a.github {
+            color: #333;
+            background-color: #f2f2f2; }
+        section article#Duvidas ul li small {
+          text-align: center;
+          display: block; }
+    section article#Duvidas a {
+      color: #fff; }
+
+footer {
+  text-align: center; }
+  footer h3, footer a {
+    font-weight: normal;
+    color: #999; }
+
+@media all and (max-width: 1000px) {
+  nav ul li a {
+    font-size: 0.9em; } }
+span.menu-mobile {
+  display: none; }
+
+@media all and (max-width: 800px) {
+  header h1 {
+    font-size: 2em; }
+    header h1 span {
+      font-size: 1.5em; }
+  header h2 {
+    font-size: 1.25em; }
+
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    left: 0;
+    background-color: #540404;
+    margin: 0;
+    padding: 0.9em 0.2em;
+    text-align: center; }
+    nav span.menu-mobile {
+      background-color: #540404;
+      margin: 0;
+      padding: 0.9em 0.2em;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      position: relative;
+      right: 0;
+      display: block;
+      color: white; }
+    nav ul {
+      display: none; }
+      nav ul li {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+        text-align: left; }
+        nav ul li a {
+          font-size: 1.2em;
+          font-weight: lighter; }
+    nav.exibir {
+      width: 85%; }
+      nav.exibir ul {
+        display: block; }
+        nav.exibir ul li {
+          display: block; }
+          nav.exibir ul li:before {
+            content: ">> ";
+            color: rgba(255, 255, 255, 0.7); }
+      nav.exibir span.menu-mobile {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: right;
+        padding-right: 1em; }
+        nav.exibir span.menu-mobile:before {
+          content: "<< "; }
+
+  section article ul li {
+    display: block;
+    width: 100% !important; }
+  section article div.boxes {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=estilo.css.map */
